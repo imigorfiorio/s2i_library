@@ -1,0 +1,348 @@
+:root {
+  --font-title: "DM Serif Display", serif;
+  --font-text: "DM Sans", sans-serif;
+  --clr-light: #dbdbdb;
+  --clr-dark: #000000;
+  --clr-accent: #ff372a;
+}
+
+.dark-mode {
+  --clr-light: #000000;
+  --clr-dark: #e7e4e4;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+html {
+  scrollbar-width: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 1.3rem;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  color: inherit;
+}
+a:hover {
+  color: var(--clr-accent);
+}
+a:visited {
+  color: var(--clr-accent);
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--clr-dark);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --font-title: "DM Serif Display", serif;
+  --font-text: "DM Sans", sans-serif;
+  --clr-light: #dbdbdb;
+  --clr-dark: #000000;
+  --clr-accent: #ff372a;
+}
+
+.dark-mode {
+  --clr-light: #000000;
+  --clr-dark: #e7e4e4;
+}
+
+:root {
+  --font-title: "DM Serif Display", serif;
+  --font-text: "DM Sans", sans-serif;
+  --clr-light: #dbdbdb;
+  --clr-dark: #000000;
+  --clr-accent: #ff372a;
+}
+
+.dark-mode {
+  --clr-light: #000000;
+  --clr-dark: #e7e4e4;
+}
+
+.search_wrapper {
+  padding: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_title {
+  user-select: none;
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: clamp(2.5rem, 7vw, 4rem);
+}
+.search_title mark {
+  background-color: transparent;
+  color: var(--clr-accent);
+}
+
+.search_bar {
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.search_form {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid var(--clr-dark);
+}
+.search_form:hover {
+  border-bottom: 3px solid var(--clr-accent);
+}
+.search_form:focus-within {
+  border-bottom: 3px solid var(--clr-accent);
+}
+
+.search_input {
+  all: unset;
+  width: 100%;
+  padding-bottom: 0.2em;
+  font-size: 1.5rem;
+}
+.search_input::placeholder {
+  color: var(--clr-dark);
+  opacity: 0.4;
+}
+.search_input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.theme-icon {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  fill: var(--clr-dark);
+}
+.theme-icon:hover {
+  fill: var(--clr-accent);
+}
+
+.search_splitter {
+  padding: 0 7px 25px 7px;
+}
+.search_splitter::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  border-radius: 50px;
+  background-color: var(--clr-dark);
+}
+
+.btn-search {
+  padding-right: 10px;
+}
+
+.btn-cancel {
+  transform: translateY(1px);
+  display: none;
+}
+
+.search-icon {
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  fill: var(--clr-dark);
+}
+.search-icon:hover {
+  fill: var(--clr-accent);
+}
+
+:root {
+  --font-title: "DM Serif Display", serif;
+  --font-text: "DM Sans", sans-serif;
+  --clr-light: #dbdbdb;
+  --clr-dark: #000000;
+  --clr-accent: #ff372a;
+}
+
+.dark-mode {
+  --clr-light: #000000;
+  --clr-dark: #e7e4e4;
+}
+
+.books {
+  padding: 5% 5% 7em 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 3em 2em;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.card {
+  display: grid;
+  align-items: end;
+  grid-template-rows: 1fr;
+}
+
+.card_cover {
+  user-select: none;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  border: 2px solid var(--clr-dark);
+}
+.card_cover:hover {
+  border: 2px solid var(--clr-accent);
+}
+
+.card_bottom {
+  padding-top: 1em;
+  display: grid;
+  gap: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card_bottom .card_title, .card_bottom .card_author {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_bottom .card_title {
+  font-style: italic;
+}
+.card_bottom .card_author {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 2560px) {
+  .books {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  }
+}
+@media screen and (min-width: 1564px) {
+  .books {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 491px) {
+  .books {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr));
+  }
+}
+:root {
+  --font-title: "DM Serif Display", serif;
+  --font-text: "DM Sans", sans-serif;
+  --clr-light: #dbdbdb;
+  --clr-dark: #000000;
+  --clr-accent: #ff372a;
+}
+
+.dark-mode {
+  --clr-light: #000000;
+  --clr-dark: #e7e4e4;
+}
+
+.about {
+  padding: 5%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.about_banner {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--clr-dark);
+}
+.about_banner .about_title {
+  font-family: var(--font-title);
+  font-size: clamp(2.3rem, 5vw, 3rem);
+}
+
+.about_info {
+  padding-bottom: 5%;
+  word-wrap: break-word;
+}
+.about_info em {
+  font-style: italic;
+}
+.about_info strong {
+  font-weight: 700;
+}
+
+.btn-exit {
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 5%;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+}
+
+.exit-icon {
+  padding-top: 1px;
+  fill: var(--clr-light);
+}
+
+/*# sourceMappingURL=style.css.map */

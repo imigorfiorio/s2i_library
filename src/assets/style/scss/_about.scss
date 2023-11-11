@@ -1,0 +1,50 @@
+@import "variables";
+
+.about {
+  padding: 5%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.about_banner {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--clr-dark);
+  
+  .about_title {
+    font-family: var(--font-title);
+    font-size: clamp(2.3rem, 5vw, 3rem);
+  }
+  
+}
+
+.about_info {
+  padding-bottom: 5%;
+  word-wrap: break-word;
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.btn-exit {
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 5%;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+}
+
+.exit-icon {
+  padding-top: 1px;
+  fill: var(--clr-light);
+}

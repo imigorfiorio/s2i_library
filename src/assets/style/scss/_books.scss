@@ -1,0 +1,70 @@
+@import "variables";
+
+.books {
+  padding: 5% 5% 7em 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 3em 2em;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.card {
+  display: grid;
+  align-items: end;
+  grid-template-rows: 1fr;
+}
+
+.card_cover {
+  user-select: none;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  border: 2px solid var(--clr-dark);
+
+  &:hover {
+    border: 2px solid var(--clr-accent);
+  }
+}
+
+.card_bottom {
+  padding-top: 1em;
+  display: grid;
+  gap: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  .card_title, .card_author {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card_title {
+    font-style: italic;
+  }
+
+  .card_author {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .books {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); 
+  }
+}
+
+@media screen and (min-width: 1564px) {
+  .books {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .books {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr));
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --font-title: "DM Serif Display", serif;
+  --font-text: "DM Sans", sans-serif;
+
+  --clr-light: #dbdbdb;
+  --clr-dark: #000000;
+  --clr-accent: #ff372a;
+}
+
+.dark-mode {
+  --clr-light: #000000;
+  --clr-dark: #e7e4e4;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
